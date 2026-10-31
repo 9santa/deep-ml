@@ -8,11 +8,12 @@ def orthogonal_projection(v, L):
 	:param L: The line vector defining the direction of projection
 	:return: List representing the projection of v onto L
 	"""
-	if all(x == 0 for x in L):
-		return [0] * len(L)
-
 	v = np.asarray(v)
 	L = np.asarray(L)
 
-	scalar = np.dot(v, L) / np.dot(L, L)
+	denom = np.dot(L, L)
+	if np.isclose(denom, 0):
+		return np.zeros_like(v, dtype=float)
+
+	scalar = np.dot(v, L) / denom
 	return scalar * L
