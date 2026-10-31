@@ -8,8 +8,8 @@ def matrixmul(a:list[list[int|float]],
     c = [[0.0 for _ in range(cb)] for _ in range(ra)]
 
     for i in range(ra):
-        for j in range(cb):
-            for k in range(ca):
+        for k in range(ca):
+            for j in range(cb):
                 c[i][j] += a[i][k] * b[k][j]
 
     return c
