@@ -1,4 +1,4 @@
-from functools import reduce
+import numpy as np
 
 def orthogonal_projection(v, L):
 	"""
@@ -10,10 +10,9 @@ def orthogonal_projection(v, L):
 	"""
 	if all(x == 0 for x in L):
 		return [0] * len(L)
-	
-	vL = sum(x * y for x, y in zip(v, L))
-	L_norm_sq = sum(x ** 2 for x in L)
 
-	scalar = vL / L_norm_sq
+	v = np.asarray(v)
+	L = np.asarray(L)
 
-	return [scalar * x for x in L]
+	scalar = np.dot(v, L) / np.dot(L, L)
+	return scalar * L
