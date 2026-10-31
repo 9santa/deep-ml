@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T09:21:14.903Z",
+  "generated_at": "2026-10-31T09:34:26.848Z",
   "items": {
     "math:10": {
       "kind": "math",
@@ -83,6 +83,19 @@
       "path": "math/0034-least-squares-and-the-normal-equations",
       "first_solved_at": "2026-10-31T09:21:14.263Z",
       "last_pushed_at": "2026-10-31T09:21:14.263Z"
+    },
+    "problem:66": {
+      "kind": "problem",
+      "id": "66",
+      "title": "Implement Orthogonal Projection of a Vector onto a Line",
+      "difficulty": "easy",
+      "category": "Linear Algebra",
+      "url": "https://www.deep-ml.com/problems/66",
+      "path": "problems/0066-implement-orthogonal-projection-of-a-vector-onto-a-line",
+      "first_solved_at": "2026-10-31T09:34:26.054Z",
+      "last_pushed_at": "2026-10-31T09:34:26.054Z",
+      "language": "python",
+      "lines": 20
     }
   }
 }
