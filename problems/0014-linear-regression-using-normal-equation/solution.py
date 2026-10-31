@@ -6,6 +6,6 @@ def linear_regression_normal_equation(X: list[list[float]], y: list[float]) -> l
 	XTX_inv = np.linalg.inv(np.matmul(X.T, X))
 	XTy = np.dot(X.T, y)
 
-	theta = np.dot(XTX_inv, XTy)
+	theta = np.round(np.dot(XTX_inv, XTy), decimals=4)
 
 	return theta
