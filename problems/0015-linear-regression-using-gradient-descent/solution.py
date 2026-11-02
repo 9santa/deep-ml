@@ -18,22 +18,14 @@ def linear_regression_gradient_descent(X: np.ndarray, y: np.ndarray, alpha: floa
     theta = np.zeros((n, 1))  # Initialize weights to zeros
 
     # Your code here: implement gradient descent
-    def mse_loss(weights):
-        return np.mean((np.dot(X, theta) - y) ** 2)
+    for _ in range(iterations):
+        preds = np.dot(X, theta)
 
-    def compute_grad(weights):
-        preds = np.dot(X, weights)
-        return (1 / m) * np.dot(X.T, preds - y)
+        grad = (1 / m) * np.dot(X.T, preds - y)
 
+        theta -= alpha * grad
 
-    for i in range(iterations):
-        grad = compute_grad(theta)
-        w_new = theta - (alpha * grad)
-        delta_w = w_new - theta
-
-        theta = w_new
-
-        if np.any(np.isnan(delta_w)):
+        if np.any(np.isnan(theta)):
             break
     
 
