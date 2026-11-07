@@ -17,7 +17,7 @@ def numerical_gradient_check(f, x, analytical_grad, epsilon=1e-7):
     x = np.asarray(x, dtype=float)
     numerical_grad = np.zeros_like(analytical_grad)
 
-    for i in range(len(x)):
+    for i in np.ndindex(x.shape):
         x_plus = x.copy()
         x_minus = x.copy()
 
