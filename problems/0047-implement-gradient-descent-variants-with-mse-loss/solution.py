@@ -29,7 +29,7 @@ def gradient_descent(X, y, weights, learning_rate, n_epochs, batch_size=1, metho
                 yi = y[i : i+1]
 
                 y_pred = np.dot(xi, weights)
-                loss = (y_pred - y) ** 2
+                loss = (y_pred - yi) ** 2
 
                 grad = 2 * xi.T.dot(y_pred - yi)
 
