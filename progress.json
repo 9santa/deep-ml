@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-20T11:50:09.755Z",
+  "generated_at": "2026-11-21T09:54:26.940Z",
   "items": {
     "math:10": {
       "kind": "math",
@@ -183,6 +183,17 @@
       "last_pushed_at": "2026-11-20T11:50:09.041Z",
       "language": "python",
       "lines": 14
+    },
+    "math:154": {
+      "kind": "math",
+      "id": "154",
+      "title": "LoRA Parameter and Compute Arithmetic",
+      "difficulty": "easy",
+      "category": "Deep Learning Theory",
+      "url": "https://www.deep-ml.com/math-problems/154",
+      "path": "math/0154-lora-parameter-and-compute-arithmetic",
+      "first_solved_at": "2026-11-21T09:54:25.727Z",
+      "last_pushed_at": "2026-11-21T09:54:25.727Z"
     }
   }
 }
