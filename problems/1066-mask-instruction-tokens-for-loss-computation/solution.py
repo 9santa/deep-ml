@@ -1,5 +1,5 @@
 def mask_instruction_loss(batch, pad_token_id, ignore_index=-100):
-    if batch is None:
+    if not batch:
         return {'inputs': [], 'targets': []}
 
     # Longest 'tokens' list in the batch
