@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**18** solved · 11 problems · 0 labs · 7 math
+**19** solved · 12 problems · 0 labs · 7 math
 
 ![Coverage](./coverage.svg)
 
@@ -19,6 +19,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Matrix-Vector Dot Product](https://www.deep-ml.com/problems/1) | easy | 2026-10-31 | [solution](problems/0001-matrix-vector-dot-product) |
 | [Regex-Based Text Tokenizer](https://www.deep-ml.com/problems/940) | easy | 2026-11-20 | [solution](problems/0940-regex-based-text-tokenizer) |
 | [Implement Gradient Descent Variants with MSE Loss](https://www.deep-ml.com/problems/47) | medium | 2026-11-07 | [solution](problems/0047-implement-gradient-descent-variants-with-mse-loss) |
+| [LoRA: Low-Rank Adaptation Forward Pass](https://www.deep-ml.com/problems/222) | medium | 2026-11-22 | [solution](problems/0222-lora-low-rank-adaptation-forward-pass) |
 | [Mask Instruction Tokens for Loss Computation](https://www.deep-ml.com/problems/1066) | medium | 2026-11-21 | [solution](problems/1066-mask-instruction-tokens-for-loss-computation) |
 | [Masked Cross-Entropy Loss for Supervised Finetuning](https://www.deep-ml.com/problems/795) | medium | 2026-11-22 | [solution](problems/0795-masked-cross-entropy-loss-for-supervised-finetuning) |
 | [Matrix times Matrix ](https://www.deep-ml.com/problems/9) | medium | 2026-10-31 | [solution](problems/0009-matrix-times-matrix) |
