@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-21T10:40:04.391Z",
+  "generated_at": "2026-11-22T09:52:50.544Z",
   "items": {
     "math:10": {
       "kind": "math",
@@ -204,9 +204,9 @@
       "url": "https://www.deep-ml.com/problems/1066",
       "path": "problems/1066-mask-instruction-tokens-for-loss-computation",
       "first_solved_at": "2026-11-21T10:39:22.649Z",
-      "last_pushed_at": "2026-11-21T10:40:03.745Z",
+      "last_pushed_at": "2026-11-22T09:52:48.995Z",
       "language": "python",
-      "lines": 32
+      "lines": 38
     }
   }
 }

@@ -5,27 +5,34 @@ def mask_instruction_loss(batch, pad_token_id, ignore_index=-100):
     # Longest 'tokens' list in the batch
     L = max(len(item['tokens']) for item in batch)
 
-    inp, tar = [], []
+    all_inputs, all_targets = [], []
 
     for item in batch:
-        number_of_pads = L - len(item['tokens'])
-        padded = item['tokens'] + [pad_token_id] * number_of_pads
+        tokens = item["tokens"]
 
+        # 1. Pad to maximum length
+        padded = tokens + [pad_token_id] * (L - len(tokens))
+
+        # 2. Shift for next-token prediction
         inputs = padded[:-1]
         targets = padded[1:]
 
-        seen_pad = False
-        for i in range(len(targets)):
-            if i + 1 < item['instruction_length']:
-                targets[i] = ignore_index
+        # 3. Mask instruction tokens using slicing
+        n = max(0, item["instruction_length"] - 1)
+        targets[:n] = [ignore_index] * n
 
-            if targets[i] == pad_token_id:
-                if seen_pad:
-                    targets[i] = ignore_index
-                else:
-                    seen_pad = True
+        # 4. Keep first pad token, mask subsequent ones
+        try:
+            first_pad = targets.index(pad_token_id)
+        except ValueError:
+            pass
+        else:
+            targets[first_pad + 1:] = [
+                ignore_index if token == pad_token_id else token
+                for token in targets[first_pad + 1:]
+            ]
 
-        inp.append(inputs)
-        tar.append(targets)
-    
-    return {'inputs': inp, 'targets': tar}
+        all_inputs.append(inputs)
+        all_targets.append(targets)
+
+    return {"inputs": all_inputs, "targets": all_targets}
