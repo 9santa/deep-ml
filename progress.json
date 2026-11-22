@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-22T10:01:57.662Z",
+  "generated_at": "2026-11-22T10:11:57.956Z",
   "items": {
     "math:10": {
       "kind": "math",
@@ -217,9 +217,9 @@
       "url": "https://www.deep-ml.com/problems/795",
       "path": "problems/0795-masked-cross-entropy-loss-for-supervised-finetuning",
       "first_solved_at": "2026-11-22T10:01:57.096Z",
-      "last_pushed_at": "2026-11-22T10:01:57.096Z",
+      "last_pushed_at": "2026-11-22T10:11:57.305Z",
       "language": "python",
-      "lines": 33
+      "lines": 37
     }
   }
 }

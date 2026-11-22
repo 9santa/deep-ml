@@ -17,17 +17,21 @@ def masked_ce_loss(logits: np.ndarray, targets: np.ndarray, mask: np.ndarray) ->
     if not np.any(mask):
         return 0.0
 
-    active_logits = logits[mask]
-    active_targets = targets[mask]
+    active_logits = logits[mask] # (num_active, vocab_size)
+    active_targets = targets[mask] # (num_active,)
 
-    max_logits = np.max(active_logits, axis=-1, keepdims=True)
-    shifted_logits = active_logits - max_logits
-    log_sum_exp = np.log(np.sum(np.exp(shifted_logits), axis=-1, keepdims=True))
+    # max logit for each active position
+    max_logits = np.max(active_logits, axis=-1, keepdims=True) # (num_active, 1)
 
-    target_logits = shifted_logits[np.arange(len(active_targets)), active_targets]
+    shifted_logits = active_logits - max_logits # (num_active, vocab_size)
 
-    token_losses = log_sum_exp - target_logits
+    log_sum_exp = np.log(np.sum(np.exp(shifted_logits), axis=-1)) # (num_active,)
 
-    return float(np.mean(token_losses))
+    # (num_active,)
+    target_logits = shifted_logits[np.arange(len(active_targets)), active_targets] 
+
+    token_losses = log_sum_exp - target_logits # (num_active,)
+
+    return float(np.mean(token_losses)) # scalar
 
     
