@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T07:06:27.830Z",
+  "generated_at": "2026-11-23T07:06:44.615Z",
   "items": {
     "math:10": {
       "kind": "math",
@@ -256,7 +256,7 @@
       "url": "https://www.deep-ml.com/problems/867",
       "path": "problems/0867-calculate-lora-trainable-parameter-count-vs-full-fine-tuning",
       "first_solved_at": "2026-11-23T07:06:27.160Z",
-      "last_pushed_at": "2026-11-23T07:06:27.160Z",
+      "last_pushed_at": "2026-11-23T07:06:43.959Z",
       "language": "python",
       "lines": 13
     }

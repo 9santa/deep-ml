@@ -2,7 +2,7 @@ def lora_param_count(num_layers: int, d_model: int, num_target_matrices: int, ra
     """Compute LoRA vs full fine-tuning parameter counts."""
     
     total_matrices = num_layers * num_target_matrices
-    lora_params = total_matrices * 2 * d_model * rank
+    lora_params = total_matrices * 2 * d_model * rank # 2 for A and B LoRA matrices
     full_paarms = total_matrices * d_model * d_model
     ratio = full_paarms / lora_params
     
