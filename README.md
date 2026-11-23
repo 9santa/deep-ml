@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**19** solved · 12 problems · 0 labs · 7 math
+**20** solved · 13 problems · 0 labs · 7 math
 
 ![Coverage](./coverage.svg)
 
@@ -24,6 +24,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | [Masked Cross-Entropy Loss for Supervised Finetuning](https://www.deep-ml.com/problems/795) | medium | 2026-11-22 | [solution](problems/0795-masked-cross-entropy-loss-for-supervised-finetuning) |
 | [Matrix times Matrix ](https://www.deep-ml.com/problems/9) | medium | 2026-10-31 | [solution](problems/0009-matrix-times-matrix) |
 | [Numerical Gradient Checking](https://www.deep-ml.com/problems/313) | medium | 2026-11-07 | [solution](problems/0313-numerical-gradient-checking) |
+| [Recursively Replace Linear Layers with LoRA](https://www.deep-ml.com/problems/1074) | medium | 2026-11-23 | [solution](problems/1074-recursively-replace-linear-layers-with-lora) |
 
 ## Math
 
