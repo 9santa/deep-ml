@@ -2,7 +2,7 @@
 
 My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solution here was written by hand.
 
-**20** solved · 13 problems · 0 labs · 7 math
+**21** solved · 14 problems · 0 labs · 7 math
 
 ![Coverage](./coverage.svg)
 
@@ -13,6 +13,7 @@ My machine learning practice from [Deep-ML](https://www.deep-ml.com). Every solu
 | | Difficulty | Solved | |
 | --- | --- | --- | --- |
 | [Calculate 2x2 Matrix Inverse](https://www.deep-ml.com/problems/8) | easy | 2026-10-31 | [solution](problems/0008-calculate-2x2-matrix-inverse) |
+| [Calculate LoRA Trainable Parameter Count vs Full Fine-Tuning](https://www.deep-ml.com/problems/867) | easy | 2026-11-23 | [solution](problems/0867-calculate-lora-trainable-parameter-count-vs-full-fine-tuning) |
 | [Implement Orthogonal Projection of a Vector onto a Line](https://www.deep-ml.com/problems/66) | easy | 2026-10-31 | [solution](problems/0066-implement-orthogonal-projection-of-a-vector-onto-a-line) |
 | [Linear Regression Using Gradient Descent](https://www.deep-ml.com/problems/15) | easy | 2026-11-02 | [solution](problems/0015-linear-regression-using-gradient-descent) |
 | [Linear Regression Using Normal Equation](https://www.deep-ml.com/problems/14) | easy | 2026-10-31 | [solution](problems/0014-linear-regression-using-normal-equation) |

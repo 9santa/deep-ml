@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T06:55:59.264Z",
+  "generated_at": "2026-11-23T07:06:27.830Z",
   "items": {
     "math:10": {
       "kind": "math",
@@ -246,6 +246,19 @@
       "last_pushed_at": "2026-11-23T06:55:58.686Z",
       "language": "python",
       "lines": 43
+    },
+    "problem:867": {
+      "kind": "problem",
+      "id": "867",
+      "title": "Calculate LoRA Trainable Parameter Count vs Full Fine-Tuning",
+      "difficulty": "easy",
+      "category": "Deep Learning",
+      "url": "https://www.deep-ml.com/problems/867",
+      "path": "problems/0867-calculate-lora-trainable-parameter-count-vs-full-fine-tuning",
+      "first_solved_at": "2026-11-23T07:06:27.160Z",
+      "last_pushed_at": "2026-11-23T07:06:27.160Z",
+      "language": "python",
+      "lines": 13
     }
   }
 }
