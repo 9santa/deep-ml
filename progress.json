@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T07:06:44.615Z",
+  "generated_at": "2026-11-23T09:46:44.143Z",
   "items": {
     "math:10": {
       "kind": "math",
@@ -259,6 +259,19 @@
       "last_pushed_at": "2026-11-23T07:06:43.959Z",
       "language": "python",
       "lines": 13
+    },
+    "problem:950": {
+      "kind": "problem",
+      "id": "950",
+      "title": "BPE Encode Text Using Merge Table",
+      "difficulty": "medium",
+      "category": "NLP",
+      "url": "https://www.deep-ml.com/problems/950",
+      "path": "problems/0950-bpe-encode-text-using-merge-table",
+      "first_solved_at": "2026-11-23T09:46:43.361Z",
+      "last_pushed_at": "2026-11-23T09:46:43.361Z",
+      "language": "python",
+      "lines": 41
     }
   }
 }
